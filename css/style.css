@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 3%;
+    padding-right: 3%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.content{
+    margin-left: 50px;
+    display: flex;
+    height: 100%;
+}
+.content .col-1{
+    z-index: -1;
+    flex-basis: 25%;
+    margin-top: -70px;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("Mask_Group.png");
+}
+.content .col-2{
+    flex-basis: 75%;
+}
+.content .col-2 .btnexp{
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    width: 31%;
+    background-color: #0C3823;
+    border: none;
+    text-align: right;
+    padding: 40px;
+    transition: .4s;
+    cursor: pointer;
+}
+.content .col-2 .btnexp a{
+    color: #fff;
+     font-size: 35px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.content .col-2 .btnexp i{
+    padding-left: 40px;
+    font-size: 20px;
+}
+.content .col-2 .btnexp:hover{
+    background-color: #124B30;
+    text-align: left;
+}
+
+.content .col-2 .img-kanan{
+    width: 40.5%;
+    height: 330px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-image: url("tanam.png");
+    animation: slide 10s infinite;
+}
+@keyframes slide{
+    50%{
+        background-image: url(Mask_Group3.png);
+    }
+    100%{
+        background-image: url(tanam.png);
+    }
+}
+.content .col-2 h2:before{
+    content: '';
+    animation: animate infinite 10s;
+    /*font-weight: 400;
+    font-size: 35px;
+    position: absolute;
+    bottom: 360px;
+    right: 100px;*/
+}
+@keyframes animate{
+    0%{
+        content: 'Outdoor Plants';
+    } 
+    50%{
+        content: 'Indoor Plants';
+    }
+    100%{
+        content: 'Outdoor Plants';
+    }
+}
+.content .col-2 h2{
+    font-weight: 400;
+    font-size: 35px;
+    position: absolute;
+    bottom: 360px;
+    right: 100px;
+    
+}
+.content .col-2 h1{
+    position: absolute;
+    text-align: right;
+    bottom: 170px;
+    width: 28%;
+    font-size: 50px;
+    font-weight: 500;
+}
+.content .col-2 .plants{
+    width: 60%;
+    position: absolute;
+    font-size: 80px;
+    font-weight: 600;
+    letter-spacing: 50px;
+    top: 180px;
+    text-align: center;
+}
+.content .col-2 .img-buri img{
+    z-index: -1;
+    position: absolute;
+    bottom: 20px;
+    right: 220px;
+    width: 42%;
+}
+
+.tengah{
+    margin: 80px 50px 40px;
+    color: #0C3823;
+}
+
+.total{
+    display: flex;
+    width: 60%;
+}
+.total .totalspace{
+    flex:40%;
+}
+.total .totalwrap{
+    flex: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.total .totalwrap .total1, .total .totalwrap .total2{
+    flex: 1;
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+.total .totalwrap .total2{
+    font-weight: bold;
+}
+.total .totalwrap .total1 span, .total .totalwrap .total2 span{
+    flex: 1;
+}
+.utama{
+    width: 100%;
+    margin: 50px;
+    display: flex;
+}
+.utama .delete{
+    margin-right: 20px;
+    font-size: 30px;
+    color: #0C3823;
+    cursor: pointer;
+}
+
+
+.utama .bagi1{
+    flex: 1.5;
+    display: flex;
+}
+.utama .bagi1 .pt{
+    flex: 1;
+}
+.utama .bagi1 .pt img{
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px 0px rgba(0,0,0,0.2);
+}
+
+.utama .bagi1 .ket{
+    flex: 1.5;
+    display: flex;
+    margin: 0 0px 0 30px;
+}
+.utama .bagi1 .ket .name ul{
+    margin: 20px 20px;
+    line-height: 3px;
+}
+.utama .bagi1 .ket .name ul li{
+    display: inline-block;
+    line-height: 20px;
+    font-size: 20px;
+    list-style: none;
+}
+.utama .bagi1 .ket .name ul li i{
+    cursor: pointer;
+}
+.utama .bagi1 .ket .name .box{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 12px;
+    background-color:#0C3823;
+    color: #fff;
+    text-align: center;
+}
+.utama .bagi1 .ket .name{
+    margin-top: 30px;
+}
+.utama .bagi1 .ket .name span{
+    font-size: 25px;
+}
+.utama .bagi1 .harga{
+    flex: 1;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: end;
+    line-height: 190px;
+}
+
+.utama .bagi2{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+}
+.utama .bagi2 .ats{
+    margin: 0 0 0 20px;
+    width: 85%;
+    position: relative;
+    height: 120px;
+    border-radius: 20px;
+    background-color: #0C3823;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+}
+.utama .bagi2 .ats .sp{
+    margin: 20px;
+    font-size: 20px;
+    color: #fff;
+}
+.utama .bagi2 .ats #alamat-asli{
+    margin-left: 20px;
+    color: #fff;
+}
+.utama .bagi2 .ats i{
+    position: absolute;
+    font-weight: 700;
+    font-size: 20px;
+    right :15px;
+    top: 15px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.utama .bagi2 .bwh{
+    margin: 20px 0 0 20px;
+    border-radius : 20px;
+    width: 85%;
+    background-color: #0C3823;
+    position: relative;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+}
+.utama .bagi2 .bwh .pm{
+    padding: 20px 0 30px 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+.utama .bagi2 .bwh .lambang img{
+    width: 70px;
+    padding-bottom: 10px;
+}
+.utama .bagi2 .bwh .lambang{
+    margin: 0 70px;
+    display: flex;
+    width: 71%;
+}
+.utama .bagi2 .bwh .lambang .lst1, .utama .bagi2 .bwh .lambang .lst2{
+    flex: 1;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    cursor: pointer;
+}
+.utama .bagi2 .bwh .identitas{
+    margin: 20px 80px 20px 80px;
+    text-align: center;
+}
+.utama .bagi2 .bwh .identitas input{
+    margin-bottom: 20px;
+    font-size: 18px;
+    width: 90%;
+    padding: 10px 0 0px 0px;;
+    background: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    border-bottom: solid 2px #fff;
+}
+.utama .bagi2 .bwh .identitas input::placeholder{
+    color: #fff;
+}
+.utama .bagi2 .bwh .pay{
+    background-color: #FED600;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    color: #0C3823;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+
+.cont{
+   margin: 50px;
+}
+.cont .jud{
+    color: #0C3823;
+}
+.cont .isi{
+    display: flex;
+    margin: 30px 0;
+}
+.cont .isi .kir{
+    flex: .75;
+}
+.cont .isi .kir img{
+    margin-top: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+}
+.cont .isi .kir img:hover{
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.4);
+}
+.cont .isi .kir .ra{
+    margin: 20px 0;
+    font-size: 25px;
+    font-weight: bold;
+    color: #0C3823;
+}
+.cont .isi .kir .art{
+    font-weight: 800;
+    font-size: 20px;
+    width: 100%;
+    text-align: right;
+    cursor: pointer;
+}
+.cont .isi .kir .art a{
+    text-decoration: none;
+    color: #0C3823;
+    font-weight: 600;
+}
+.cont .isi .kan{
+    flex: 2.2;
+    margin-right: 40px;
+}
+.cont .isi .kan img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.cont .isi .kan p{
+    text-align: justify;
+    padding-bottom: 15px;
+}
+.cont .isi .kan h3{
+    padding-bottom: 15px;
+}
+.bawah{
+    text-align: center;
+    margin-bottom: 20px;
+}

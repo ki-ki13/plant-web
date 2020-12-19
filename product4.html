@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleProduct.css"> 
+    <link rel="stylesheet" href="css/styleNavbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/a0e6f08250.js" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+
+    </head>
+    <body>
+        <div class="main">
+            <div class="navbar">
+            <div class="link">
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="product1.html"><b>Product</b></a></li>
+                    <li><a href="blog.html"><b>Blog</b></a></li>
+                    <li><a href="about.html"><b>About</b></a></li>
+                </ul>
+            </div>
+            <div class="search-box">
+                <input class="search-txt" type="text" placeholder="search">
+                <button class="search-btn" href="#">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="navimg">
+                <ul>
+                    <li><a href="#"><img src="symbol/shopping-bags.svg"></a></li>
+                    <li class="dropdown"><a href="cart.html"><img class="btnuser" src="symbol/user.svg"></a>
+                        <ul  class="dropdown-content">
+                            <li><a href="login.html">Login</a></li>
+                            <li><a href="signin.html">Sign Up</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner">
+        <div id="shape">
+            <div class="shape1">
+                <a href="product1.html">Indoor Plants</a>
+            </div>
+            <div class="shape1">
+                <a href="product2.html">Outdoor Plants</a>
+            </div>
+            <div class="shape1">
+                <a href="product3.html">Accessories</a>
+            </div>
+            <div class="shape1 active">
+                <a href="product4.html">Vitamin</a>
+            </div>
+        </div>
+            <!--<span class="shape"><a href="product2.html">Outdoor Plants <i class="fas fa-arrow-right"></i></a></span> -->
+            <h1>Vitamin</h1>
+            <img src="photo/Ellipse%201.png">
+        </div>
+        <div class="content">
+            <div class="col-1">
+                <img src="photo/pupuk1.jpg">
+                <div class="overlay"></div>
+                <div class="overtxt">
+                        <i class="fas fa-shopping-bag" onclick="JSalert()"></i><br>
+                        <span>add to cart</span>
+                </div>
+                <a href="review9.html"><ul>
+                <li>Pupuk1</li>
+                <li>Rp 50K</li>
+                </ul>
+                </a>
+            </div>
+            <div class="col-2">
+                <img src="photo/pupuk2.jpg">
+                 <div class="overlay"></div>
+                <div class="overtxt">
+                        <i class="fas fa-shopping-bag" onclick="JSalert()"></i><br>
+                        <span>add to cart</span>
+                </div>
+                <a href="review10.html"><ul>
+                <li>Pupuk2</li>
+                <li>Rp 50K</li>
+                </ul></a>
+            </div>
+            <div class="col-3">
+                <img src="photo/pupuk3.jpg">
+                <div class="overlay"></div>
+                <div class="overtxt">
+                        <i class="fas fa-shopping-bag" onclick="JSalert()"></i><br>
+                        <span>add to cart</span>
+                </div>
+                <a href="review11.html"><ul>
+                <li>Pupuk3</li>
+                <li>Rp 50K</li>
+                </ul></a>
+            </div>
+        </div>
+        </div>
+    <script src="javascript.js"></script>
+    </body>
+</html>
