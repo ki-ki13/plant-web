@@ -94,6 +94,9 @@
     background-color: #0C3823;
     cursor: pointer;
 }
+.content .col-1 a, .content .col-2 a,.content .col-3 a{
+    text-decoration: none;
+}
 .content .col-1:hover{
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
 }
