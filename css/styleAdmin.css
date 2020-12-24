@@ -80,6 +80,9 @@
 }
 .isi .hrr i{
     cursor: pointer;
+    float: right;
+    line-height: 40px;
+    padding-right: 10px;
 }
 .search-txt{
     border: none;
