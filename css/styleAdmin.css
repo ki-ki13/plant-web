@@ -78,7 +78,7 @@
     border-radius: 10px;
     line-height: 40px;
 }
-.isi .hrr i{
+.isi .hrr .search-box .fa-search{
     cursor: pointer;
     float: right;
     line-height: 40px;
