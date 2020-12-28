@@ -28,6 +28,7 @@
 .content .col-1 img{
     width: 100%;
     border-radius: 20px;
+    height: 800px;
 }
 .content .col-1 span a{
     text-decoration: none;
@@ -41,7 +42,7 @@
     color: #fff;
     background-color: #0C3823;
     position: absolute;
-    bottom: 45px;
+    bottom: 0px;
     right: 0px;
     cursor: pointer;
 }
@@ -50,7 +51,7 @@
 }
 .content .col-1 .jumlah ul{
     position: absolute;
-    bottom: 60px;
+    bottom: 20px;
     left: 50px;
 }
 .content .col-1 .jumlah ul li{
