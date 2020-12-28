@@ -61,9 +61,10 @@
     height: 50px;
     line-height: 50px;
     text-align: center;
-    margin: 20px 0 0 500px;
+    margin: 20px 0;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     cursor: pointer;
+    float: right;
 }
 .content .row-1 .txt .btn:hover{
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
